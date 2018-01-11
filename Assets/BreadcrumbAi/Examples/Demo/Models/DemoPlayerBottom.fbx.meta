@@ -1,0 +1,288 @@
+fileFormatVersion: 2
+guid: aed3d3e959609d24ea7f3a0ffd2cc725
+timeCreated: 18446744011573954816
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: DemoPlayerBottom
+    100004: Foot_L
+    100006: Foot_R
+    100008: Knee_L
+    100010: Knee_R
+    100012: Leg_Control_L
+    100014: Leg_Control_R
+    100016: Leg_Lower_L
+    100018: Leg_Lower_R
+    100020: Leg_Upper_L
+    100022: Leg_Upper_R
+    100024: Model
+    100026: Stomach
+    400000: //RootNode
+    400002: DemoPlayerBottom
+    400004: Foot_L
+    400006: Foot_R
+    400008: Knee_L
+    400010: Knee_R
+    400012: Leg_Control_L
+    400014: Leg_Control_R
+    400016: Leg_Lower_L
+    400018: Leg_Lower_R
+    400020: Leg_Upper_L
+    400022: Leg_Upper_R
+    400024: Model
+    400026: Stomach
+    4300000: Model
+    7400000: Default Take
+    7400002: Idle
+    7400004: Run
+    9500000: //RootNode
+    13700000: Model
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Default Take
+      takeName: Default Take
+      firstFrame: 0
+      lastFrame: 15
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: DemoPlayerBottom
+        weight: 1
+      - path: DemoPlayerBottom/Knee_L
+        weight: 1
+      - path: DemoPlayerBottom/Knee_R
+        weight: 1
+      - path: DemoPlayerBottom/Leg_Control_L
+        weight: 1
+      - path: DemoPlayerBottom/Leg_Control_L/Foot_L
+        weight: 1
+      - path: DemoPlayerBottom/Leg_Control_R
+        weight: 1
+      - path: DemoPlayerBottom/Leg_Control_R/Foot_R
+        weight: 1
+      - path: DemoPlayerBottom/Stomach
+        weight: 1
+      - path: DemoPlayerBottom/Stomach/Leg_Upper_L
+        weight: 1
+      - path: DemoPlayerBottom/Stomach/Leg_Upper_L/Leg_Lower_L
+        weight: 1
+      - path: DemoPlayerBottom/Stomach/Leg_Upper_R
+        weight: 1
+      - path: DemoPlayerBottom/Stomach/Leg_Upper_R/Leg_Lower_R
+        weight: 1
+      - path: Model
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Idle
+      takeName: Idle
+      firstFrame: -1
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: DemoPlayerBottom
+        weight: 1
+      - path: DemoPlayerBottom/Knee_L
+        weight: 1
+      - path: DemoPlayerBottom/Knee_R
+        weight: 1
+      - path: DemoPlayerBottom/Leg_Control_L
+        weight: 1
+      - path: DemoPlayerBottom/Leg_Control_L/Foot_L
+        weight: 1
+      - path: DemoPlayerBottom/Leg_Control_R
+        weight: 1
+      - path: DemoPlayerBottom/Leg_Control_R/Foot_R
+        weight: 1
+      - path: DemoPlayerBottom/Stomach
+        weight: 1
+      - path: DemoPlayerBottom/Stomach/Leg_Upper_L
+        weight: 1
+      - path: DemoPlayerBottom/Stomach/Leg_Upper_L/Leg_Lower_L
+        weight: 1
+      - path: DemoPlayerBottom/Stomach/Leg_Upper_R
+        weight: 1
+      - path: DemoPlayerBottom/Stomach/Leg_Upper_R/Leg_Lower_R
+        weight: 1
+      - path: Model
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Run
+      takeName: Run
+      firstFrame: -1
+      lastFrame: 15
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: DemoPlayerBottom
+        weight: 1
+      - path: DemoPlayerBottom/Knee_L
+        weight: 1
+      - path: DemoPlayerBottom/Knee_R
+        weight: 1
+      - path: DemoPlayerBottom/Leg_Control_L
+        weight: 1
+      - path: DemoPlayerBottom/Leg_Control_L/Foot_L
+        weight: 1
+      - path: DemoPlayerBottom/Leg_Control_R
+        weight: 1
+      - path: DemoPlayerBottom/Leg_Control_R/Foot_R
+        weight: 1
+      - path: DemoPlayerBottom/Stomach
+        weight: 1
+      - path: DemoPlayerBottom/Stomach/Leg_Upper_L
+        weight: 1
+      - path: DemoPlayerBottom/Stomach/Leg_Upper_L/Leg_Lower_L
+        weight: 1
+      - path: DemoPlayerBottom/Stomach/Leg_Upper_R
+        weight: 1
+      - path: DemoPlayerBottom/Stomach/Leg_Upper_R/Leg_Lower_R
+        weight: 1
+      - path: Model
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

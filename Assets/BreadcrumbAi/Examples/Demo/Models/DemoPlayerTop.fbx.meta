@@ -1,0 +1,327 @@
+fileFormatVersion: 2
+guid: 742a04ba47b7d04448f5e0feebc207c8
+timeCreated: 18446744011573954816
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Arm_Control_L
+    100002: Arm_Control_R
+    100004: Arm_Lower_L
+    100006: Arm_Lower_R
+    100008: Arm_Upper_L
+    100010: Arm_Upper_R
+    100012: Chest
+    100014: //RootNode
+    100016: DemoPlayerTop
+    100018: Elbow_L
+    100020: Elbow_R
+    100022: Head
+    100024: Model
+    100026: Stomach
+    100028: Gun
+    100030: Gun_001
+    100032: Guns
+    100034: Chest_001
+    100036: Chest_002
+    400000: Arm_Control_L
+    400002: Arm_Control_R
+    400004: Arm_Lower_L
+    400006: Arm_Lower_R
+    400008: Arm_Upper_L
+    400010: Arm_Upper_R
+    400012: Chest
+    400014: //RootNode
+    400016: DemoPlayerTop
+    400018: Elbow_L
+    400020: Elbow_R
+    400022: Head
+    400024: Model
+    400026: Stomach
+    400028: Gun
+    400030: Gun_001
+    400032: Guns
+    400034: Chest_001
+    400036: Chest_002
+    4300000: Model
+    4300002: Gun_001
+    4300004: Gun
+    7400000: Default Take
+    7400002: Death1
+    7400004: Idle
+    7400006: Run
+    9500000: //RootNode
+    13700000: Model
+    13700002: Gun
+    13700004: Gun_001
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Default Take
+      takeName: Default Take
+      firstFrame: 0
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: DemoPlayerTop
+        weight: 1
+      - path: DemoPlayerTop/Arm_Control_L
+        weight: 1
+      - path: DemoPlayerTop/Arm_Control_R
+        weight: 1
+      - path: DemoPlayerTop/Elbow_L
+        weight: 1
+      - path: DemoPlayerTop/Elbow_R
+        weight: 1
+      - path: DemoPlayerTop/Stomach
+        weight: 1
+      - path: DemoPlayerTop/Stomach/Chest
+        weight: 1
+      - path: DemoPlayerTop/Stomach/Chest/Chest_001
+        weight: 1
+      - path: DemoPlayerTop/Stomach/Chest/Chest_001/Arm_Upper_L
+        weight: 1
+      - path: DemoPlayerTop/Stomach/Chest/Chest_001/Arm_Upper_L/Arm_Lower_L
+        weight: 1
+      - path: DemoPlayerTop/Stomach/Chest/Chest_002
+        weight: 1
+      - path: DemoPlayerTop/Stomach/Chest/Chest_002/Arm_Upper_R
+        weight: 1
+      - path: DemoPlayerTop/Stomach/Chest/Chest_002/Arm_Upper_R/Arm_Lower_R
+        weight: 1
+      - path: DemoPlayerTop/Stomach/Chest/Head
+        weight: 1
+      - path: Gun
+        weight: 1
+      - path: Gun_001
+        weight: 1
+      - path: Model
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Idle
+      takeName: Idle
+      firstFrame: -1
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: DemoPlayerTop
+        weight: 1
+      - path: DemoPlayerTop/Arm_Control_L
+        weight: 1
+      - path: DemoPlayerTop/Arm_Control_R
+        weight: 1
+      - path: DemoPlayerTop/Elbow_L
+        weight: 1
+      - path: DemoPlayerTop/Elbow_R
+        weight: 1
+      - path: DemoPlayerTop/Stomach
+        weight: 1
+      - path: DemoPlayerTop/Stomach/Chest
+        weight: 1
+      - path: DemoPlayerTop/Stomach/Chest/Chest_001
+        weight: 1
+      - path: DemoPlayerTop/Stomach/Chest/Chest_001/Arm_Upper_L
+        weight: 1
+      - path: DemoPlayerTop/Stomach/Chest/Chest_001/Arm_Upper_L/Arm_Lower_L
+        weight: 1
+      - path: DemoPlayerTop/Stomach/Chest/Chest_002
+        weight: 1
+      - path: DemoPlayerTop/Stomach/Chest/Chest_002/Arm_Upper_R
+        weight: 1
+      - path: DemoPlayerTop/Stomach/Chest/Chest_002/Arm_Upper_R/Arm_Lower_R
+        weight: 1
+      - path: DemoPlayerTop/Stomach/Chest/Head
+        weight: 1
+      - path: Gun
+        weight: 1
+      - path: Gun_001
+        weight: 1
+      - path: Model
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Run
+      takeName: Run
+      firstFrame: -1
+      lastFrame: 15
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: DemoPlayerTop
+        weight: 1
+      - path: DemoPlayerTop/Arm_Control_L
+        weight: 1
+      - path: DemoPlayerTop/Arm_Control_R
+        weight: 1
+      - path: DemoPlayerTop/Elbow_L
+        weight: 1
+      - path: DemoPlayerTop/Elbow_R
+        weight: 1
+      - path: DemoPlayerTop/Stomach
+        weight: 1
+      - path: DemoPlayerTop/Stomach/Chest
+        weight: 1
+      - path: DemoPlayerTop/Stomach/Chest/Chest_001
+        weight: 1
+      - path: DemoPlayerTop/Stomach/Chest/Chest_001/Arm_Upper_L
+        weight: 1
+      - path: DemoPlayerTop/Stomach/Chest/Chest_001/Arm_Upper_L/Arm_Lower_L
+        weight: 1
+      - path: DemoPlayerTop/Stomach/Chest/Chest_002
+        weight: 1
+      - path: DemoPlayerTop/Stomach/Chest/Chest_002/Arm_Upper_R
+        weight: 1
+      - path: DemoPlayerTop/Stomach/Chest/Chest_002/Arm_Upper_R/Arm_Lower_R
+        weight: 1
+      - path: DemoPlayerTop/Stomach/Chest/Head
+        weight: 1
+      - path: Gun
+        weight: 1
+      - path: Gun_001
+        weight: 1
+      - path: Model
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

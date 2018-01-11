@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project3-RPG", "Project3-RPG.csproj", "{CEE84963-4CB9-33A3-96B4-AF5DDE40CF3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project3-RPG.Editor", "Project3-RPG.Editor.csproj", "{C5946DAE-38C4-9E32-4620-DDAA270D5EBF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CEE84963-4CB9-33A3-96B4-AF5DDE40CF3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEE84963-4CB9-33A3-96B4-AF5DDE40CF3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEE84963-4CB9-33A3-96B4-AF5DDE40CF3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEE84963-4CB9-33A3-96B4-AF5DDE40CF3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5946DAE-38C4-9E32-4620-DDAA270D5EBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5946DAE-38C4-9E32-4620-DDAA270D5EBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5946DAE-38C4-9E32-4620-DDAA270D5EBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5946DAE-38C4-9E32-4620-DDAA270D5EBF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
