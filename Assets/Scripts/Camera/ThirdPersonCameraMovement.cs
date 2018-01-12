@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ThirdPersonCamera : MonoBehaviour
+public class ThirdPersonCameraMovement : MonoBehaviour
 {
 
     public Transform playerCam, character, centerPoint;
@@ -56,42 +56,42 @@ public class ThirdPersonCamera : MonoBehaviour
         mouseX += Input.GetAxis("Mouse X");
         mouseY -= Input.GetAxis("Mouse Y");
 
-        centerPoint.position = new Vector3(character.position.x, character.position.y + mouseYPosition, character.position.z);
+        centerPoint.position = new Vector3(character.position.x, character.position.y, character.position.z);
 
-        
 
         if (Mathf.Abs(Input.GetAxis("Mouse X")) > 0.0001f)
         {
-            
+
             Quaternion turnAngle = Quaternion.Euler(0, centerPoint.eulerAngles.y, 0);
 
             character.rotation = Quaternion.Slerp(character.rotation, turnAngle, Time.deltaTime * 5f);
 
             target = 50;
+        
 
         }
         else if (character.eulerAngles.y != centerPoint.eulerAngles.y && target >0)
         {
             Quaternion turnAngle = Quaternion.Euler(0, centerPoint.eulerAngles.y, 0);
 
-            character.rotation = Quaternion.Slerp(character.rotation, turnAngle, Time.deltaTime * 5f);
+            character.rotation = Quaternion.Slerp(character.rotation, turnAngle, Time.deltaTime* 5f);
 
             target -= 1;
         }
-        
-
-
-
-        //else
-        //{
-        //    Debug.Log("Doing other");
-        //    character.rotation = Quaternion.Slerp(character.rotation, character.rotation, Time.deltaTime * rotationSpeed);
-        //}
 
 
 
 
+            //else
+            //{
+            //    Debug.Log("Doing other");
+            //    character.rotation = Quaternion.Slerp(character.rotation, character.rotation, Time.deltaTime * rotationSpeed);
+            //}
 
 
-    }
+
+
+
+
+        }
 }
