@@ -13,15 +13,23 @@ public class ThirdPersonCamera : MonoBehaviour
 	Transform standardPos;			// the usual position for the camera, specified by a transform in the game
 	Transform frontPos;			// Front Camera locater
 	Transform jumpPos;			// Jump Camera locater
-	
-	// スムーズに繋がない時（クイック切り替え）用のブーリアンフラグ
-	bool bQuickSwitch = false;	//Change Camera Position Quickly
+
+    private float zoom;
+    public float zoomSpeed = 2;
+    public float zoomMin = -2f;
+    public float zoomMax = -10f;
+
+    // スムーズに繋がない時（クイック切り替え）用のブーリアンフラグ
+    bool bQuickSwitch = false;	//Change Camera Position Quickly
 	
 	
 	void Start()
 	{
-		// 各参照の初期化
-		standardPos = GameObject.Find ("CamPos").transform;
+        // 各参照の初期化
+        Cursor.visible = false;
+        zoom = -3;
+
+        standardPos = GameObject.Find ("CamPos").transform;
 		
 		if(GameObject.Find ("FrontPos"))
 			frontPos = GameObject.Find ("FrontPos").transform;
@@ -37,8 +45,23 @@ public class ThirdPersonCamera : MonoBehaviour
 	
 	void FixedUpdate ()	// このカメラ切り替えはFixedUpdate()内でないと正常に動かない
 	{
-		
-		if(Input.GetButton("Fire1"))	// left Ctlr
+        zoom += Input.GetAxis("Mouse ScrollWheel") * zoomSpeed;
+
+        if (zoom > zoomMin)
+        {
+            zoom = zoomMin;
+        }
+
+        if (zoom < zoomMax)
+        {
+            zoom = zoomMax;
+        }
+
+        standardPos.transform.localPosition = new Vector3(0, 0, zoom);
+        frontPos.transform.localPosition = new Vector3(0, 0, zoom);
+        jumpPos.transform.localPosition = new Vector3(0, 0, zoom);
+
+        if (Input.GetButton("Fire1"))	// left Ctlr
 		{	
 			// Change Front Camera
 			setCameraPositionFrontView();
