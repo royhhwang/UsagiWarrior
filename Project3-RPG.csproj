@@ -318,6 +318,7 @@
     <Compile Include="Assets\BreadcrumbAi\Examples\Demo\Scripts\DemoSpawnerControl.cs" />
     <Compile Include="Assets\BreadcrumbAi\Examples\Demo\Scripts\DemoTidyBullets.cs" />
     <Compile Include="Assets\BreadcrumbAi\Examples\Demo\Scripts\DemoTidySpit.cs" />
+    <Compile Include="Assets\despawn.cs" />
     <Compile Include="Assets\UnityChan\Scripts\CameraController.cs" />
     <Compile Include="Assets\UnityChan\Scripts\FaceUpdate.cs" />
     <Compile Include="Assets\UnityChan\Scripts\IdleChanger.cs" />

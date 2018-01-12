@@ -104,7 +104,7 @@ public class DemoEnemyControls : MonoBehaviour {
 		    	} else {
 					if(ai.attackState == Ai.ATTACK_STATE.CanAttackPlayer && Time.time > rangedAttackNext){
 						rangedAttackNext = Time.time + rangedAttackRate;
-						Rigidbody spit = Instantiate(rangedProjectilePrefab, transform.position + transform.forward + transform.up, transform.rotation) as Rigidbody;
+						Rigidbody spit = (Rigidbody)Instantiate(rangedProjectilePrefab, transform.position + transform.forward + transform.up, transform.rotation) as Rigidbody;
 						spit.AddForce(transform.forward * 500);
 						_animAttack = true;
 					} else {

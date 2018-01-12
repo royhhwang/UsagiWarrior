@@ -375,6 +375,7 @@ GameObject:
   - component: {fileID: 9500002}
   - component: {fileID: 11400004}
   - component: {fileID: 11400002}
+  - component: {fileID: 114911631253627932}
   m_Layer: 9
   m_Name: EnemyRanged
   m_TagString: Enemy
@@ -941,8 +942,7 @@ MonoBehaviour:
   healthPickUpPrefab: {fileID: 0}
   _canDropPickUp: 0
   enemyType: 1
-  rangedProjectilePrefab: {fileID: 5400000, guid: be253b20856b13f4f929eccaedac0db3,
-    type: 2}
+  rangedProjectilePrefab: {fileID: 5400000}
   bloodPrefab: {fileID: 100002, guid: 17ea22ea8413fb448a0d2edccb9329c5, type: 2}
   specialPrefab: {fileID: 0}
 --- !u!122 &12200000
@@ -1058,3 +1058,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 100048}
   m_IsPrefabParent: 1
+--- !u!114 &114911631253627932
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2380997670b7c114196bfa182ce09294, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DeathTime: 2
