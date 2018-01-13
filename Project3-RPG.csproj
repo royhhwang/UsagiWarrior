@@ -301,8 +301,10 @@
     <Compile Include="Assets\BreadcrumbAi\Examples\Demo\Scripts\DemoTidyBullets.cs" />
     <Compile Include="Assets\BreadcrumbAi\Examples\Demo\Scripts\DemoTidySpit.cs" />
     <Compile Include="Assets\Scripts\Camera\ThirdPersonCameraMovement.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerAttack.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerHealth.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\Player\Weapon\WeaponSwing.cs" />
     <Compile Include="Assets\UnityChan\Scripts\CameraController.cs" />
     <Compile Include="Assets\UnityChan\Scripts\FaceUpdate.cs" />
     <Compile Include="Assets\UnityChan\Scripts\IdleChanger.cs" />
