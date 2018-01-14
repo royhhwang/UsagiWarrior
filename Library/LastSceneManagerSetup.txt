@@ -1,4 +1,4 @@
 sceneSetups:
-- path: C:/Users/hjayy/Desktop/RoyVersion/Project3-RPG/Assets/enemyAItest.unity
+- path: Assets/enemyAItest.unity
   isLoaded: 1
   isActive: 1
