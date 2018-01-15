@@ -26,11 +26,12 @@ public class WeaponAttack : MonoBehaviour {
         animator.SetTrigger("BaseAttack");
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider col)
     {
-       if(other.tag == "Enemy")
+        
+        if (col.tag == "Enemy")
         {
-           // other.TakeDamage();
+            Debug.Log("Hit: " + col.tag);
         }
     }
 }
