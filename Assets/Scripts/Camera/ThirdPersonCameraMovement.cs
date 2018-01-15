@@ -75,23 +75,16 @@ public class ThirdPersonCameraMovement : MonoBehaviour
             Quaternion turnAngle = Quaternion.Euler(0, centerPoint.eulerAngles.y, 0);
 
             character.rotation = Quaternion.Slerp(character.rotation, turnAngle, Time.deltaTime* 5f);
-
+            
             target -= 1;
         }
 
 
 
 
-            //else
-            //{
-            //    Debug.Log("Doing other");
-            //    character.rotation = Quaternion.Slerp(character.rotation, character.rotation, Time.deltaTime * rotationSpeed);
-            //}
 
 
 
 
-
-
-        }
+    }
 }
