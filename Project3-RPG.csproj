@@ -302,6 +302,8 @@
     <Compile Include="Assets\BreadcrumbAi\Examples\Demo\Scripts\DemoTidySpit.cs" />
     <Compile Include="Assets\despawn.cs" />
     <Compile Include="Assets\Scripts\Camera\ThirdPersonCameraMovement.cs" />
+    <Compile Include="Assets\Scripts\Enemy\BasicEnemy.cs" />
+    <Compile Include="Assets\Scripts\Enemy\IEnemy.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerHealth.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Player\Shield\ShieldBlock.cs" />

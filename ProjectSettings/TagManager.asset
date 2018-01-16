@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Waypoint
   - Breadcrumb
+  - Sword
   layers:
   - Default
   - TransparentFX
