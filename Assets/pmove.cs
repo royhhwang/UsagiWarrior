@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class pmove : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
 
     public float moveSpeed;
@@ -23,9 +23,9 @@ public class pmove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
         CharacterController controller = gameObject.GetComponent<CharacterController>();
-        
+
         if (controller.isGrounded)
         {
 

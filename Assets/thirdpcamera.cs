@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class thirdpcamera : MonoBehaviour
+public class ThirdPersonCameraMovement : MonoBehaviour
 {
 
     public Transform playerCam, character, centerPoint;
@@ -67,14 +67,14 @@ public class thirdpcamera : MonoBehaviour
             character.rotation = Quaternion.Slerp(character.rotation, turnAngle, Time.deltaTime * 5f);
 
             target = 50;
-        
+
 
         }
-        else if (character.eulerAngles.y != centerPoint.eulerAngles.y && target >0)
+        else if (character.eulerAngles.y != centerPoint.eulerAngles.y && target > 0)
         {
             Quaternion turnAngle = Quaternion.Euler(0, centerPoint.eulerAngles.y, 0);
 
-            character.rotation = Quaternion.Slerp(character.rotation, turnAngle, Time.deltaTime* 5f);
+            character.rotation = Quaternion.Slerp(character.rotation, turnAngle, Time.deltaTime * 5f);
 
             target -= 1;
         }
@@ -82,16 +82,16 @@ public class thirdpcamera : MonoBehaviour
 
 
 
-            //else
-            //{
-            //    Debug.Log("Doing other");
-            //    character.rotation = Quaternion.Slerp(character.rotation, character.rotation, Time.deltaTime * rotationSpeed);
-            //}
+        //else
+        //{
+        //    Debug.Log("Doing other");
+        //    character.rotation = Quaternion.Slerp(character.rotation, character.rotation, Time.deltaTime * rotationSpeed);
+        //}
 
 
 
 
 
 
-        }
+    }
 }
