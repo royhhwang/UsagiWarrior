@@ -9,8 +9,8 @@ class Welcome extends Component {
      <h2>Welcome Page</h2>
      <p> We are making a game! Signup to check it out!</p>
      <p> If you are already a member click Login!</p>
-     <a href='/login' class='button'> Login</a>
-     <a href='/signup' class='button success'> Signup</a>
+     <a href='/login' className='button'> Login</a>
+     <a href='/signup' className='button success'> Signup</a>
    </div>
    
    </div>
