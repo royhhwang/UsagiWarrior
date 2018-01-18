@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: 03a6e4ed4a17ec449beb295a4502a9c8
-timeCreated: 1516187639
+guid: c6eb4ef674fd7664884af18343385613
+timeCreated: 1516266854
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: Box001
-    100002: bt002
-    100004: bt003
-    100006: bt004
-    100008: bt1
-    100010: //RootNode
+    100002: //RootNode
+    100004: bt002
+    100006: bt003
+    100008: bt004
+    100010: bt1
     100012: tt002
     100014: tt003
     100016: tt1
     400000: Box001
-    400002: bt002
-    400004: bt003
-    400006: bt004
-    400008: bt1
-    400010: //RootNode
+    400002: //RootNode
+    400004: bt002
+    400006: bt003
+    400008: bt004
+    400010: bt1
     400012: tt002
     400014: tt003
     400016: tt1
@@ -48,7 +48,7 @@ ModelImporter:
     4300010: bt004
     4300012: tt002
     4300014: tt003
-    7400000: enematt
+    7400000: Take 001
     9500000: //RootNode
   externalObjects: {}
   materials:
@@ -70,60 +70,13 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     animationCompression: 1
-    animationRotationError: 0.1
-    animationPositionError: 0.1
-    animationScaleError: 0.1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations:
-    - serializedVersion: 16
-      name: enematt
-      takeName: Take 001
-      firstFrame: 0
-      lastFrame: 30
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves:
-      - name: Curve
-        curve:
-          serializedVersion: 2
-          curve:
-          - serializedVersion: 2
-            time: 0
-            value: 0
-            inSlope: 0
-            outSlope: 0
-            tangentMode: 0
-          - serializedVersion: 2
-            time: 1
-            value: 0
-            inSlope: 0
-            outSlope: 0
-            tangentMode: 0
-          preInfinity: 3
-          postInfinity: 3
-          rotationOrder: 0
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+    clipAnimations: []
     isReadable: 1
   meshes:
     lODScreenPercentages: []
