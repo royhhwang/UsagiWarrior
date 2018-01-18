@@ -29,6 +29,7 @@ public class WeaponAttack : MonoBehaviour {
 
     private void OnTriggerEnter(Collider col)
     {
+
         if (col.tag == "Enemy")
         {
             Debug.Log("Hit: " + col.tag);

@@ -162,8 +162,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1492819389720572}
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 42.8, y: 1.03, z: 61}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4812529813951570}
@@ -385,7 +385,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 0b02e87ef1d7f064a9c83b23a018cc8f, type: 2}
+  - {fileID: 2100000, guid: 77a3aa5eced1ac44c983fbfed36f4eaf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -419,7 +419,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 0b02e87ef1d7f064a9c83b23a018cc8f, type: 2}
+  - {fileID: 2100000, guid: 77a3aa5eced1ac44c983fbfed36f4eaf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -453,7 +453,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: fe16b863e76a1564c8da9170f3ce778f, type: 2}
+  - {fileID: 2100000, guid: 75eaf5df49fe89c489a410f280aed2e9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -601,6 +601,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82ab78c647ba1bb4f95c0ab1e3cb026d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startingHealth: 100
+  currentHealth: 0
+  healthSlider: {fileID: 0}
+  damageImage: {fileID: 0}
+  deathClip: {fileID: 0}
+  flashSpeed: 5
+  flashColor: {r: 1, g: 0, b: 0, a: 0.1}
 --- !u!114 &114122823534357156
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -612,6 +619,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5183b8ade8fc094daa8a812fd24cefb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerCam: {fileID: 4192186317375458}
+  character: {fileID: 4189019192920558}
+  centerPoint: {fileID: 4375361770437108}
+  mouseSensitivity: 10
+  mouseYPosition: 1
+  zoomSpeed: 2
+  zoomMin: -2
+  zoomMax: -10
+  rotationSpeed: 5
 --- !u!114 &114180273013996474
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -623,6 +639,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5259bcddc8c6ff74aacfcd92e4137d73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 0
+  jumpForce: 0
+  gravity: 0
+  moveDir: {x: 0, y: 0, z: 0}
 --- !u!114 &114529388012147562
 MonoBehaviour:
   m_ObjectHideFlags: 1
