@@ -12,8 +12,31 @@ class Login extends Component {
     this.login = this.login.bind(this);
     this.onChange = this.onChange.bind(this);
   }
-  login(){
+  login(event){
+    event.preventDefault();
+    const data = {
+      username: this.state.username,
+      password: this.state.password
+    }
+    fetch("/api/login", {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(data)
+  }).then(function(response) {
+      if (response.status >= 400) {
+        throw new Error("Bad response from server");
+      }
+      return response.json();
+  }).then(function(data) {
+      console.log(data)    
+      if(data === "success"){
+         this.setState({msg: "Welcome: "+ this.data.username});  
+      }
+  }).catch(function(err) {
+      console.log(err)
+  });
   }
+
   onChange(e){
     this.setState({[e.target.name]: e.target.value });
   }
@@ -32,7 +55,7 @@ return(<Redirect to={'/home'}/>);
    <input type='text' name='username' placeholder='Username' onChange={this.onChange}/>
    <label>Password</label>
    <input type='password' name='password' placeholder='Password' onChange={this.onChange}/>
-   <input type='submit' value='Login' className='button' onClick={this.login}/>
+   <button type='submit' value='Login' className='button' onClick={this.login} method='POST'/>
    </div>
    
    </div>

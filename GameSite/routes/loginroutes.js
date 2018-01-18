@@ -40,20 +40,21 @@ exports.signup = (req, res) => {
 exports.login = (req, res) => {
   const username = req.body.username;
   const password = req.body.password;
-  connection.query('SELECT * FROM users WHERE username = ?', [username], (error, response, fields) => {
+  connection.query('SELECT * FROM users WHERE username = ?', [username], (error, results, fields) => {
     if (error) {
       res.send({
         'code': 400,
         'failed': 'Something went wrong'
       });
     } else {
-      if (res.length > 0) {
-        bcrypt.compare(password, response[0].password, (err, doesMatch) => {
+      if (results.length > 0) {
+        bcrypt.compare(password, results[0].password, (err, doesMatch) => {
           if (doesMatch) {
             res.send({
               'code': 200,
               'success': 'Login Successfull'
             });
+            res.redirect('/home');
           } else {
             res.send({
               'code': 204,
@@ -63,7 +64,7 @@ exports.login = (req, res) => {
         });
       } else {
         res.send({
-          'code': 204,
+          'code': 205,
           'success': 'Something went wrong'
         })
       }
