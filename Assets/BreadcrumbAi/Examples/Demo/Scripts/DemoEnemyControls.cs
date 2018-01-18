@@ -23,7 +23,7 @@ public class DemoEnemyControls : MonoBehaviour {
 	private Ai ai;
 	
 	private bool _removeBody, _isHit, _animAttack;
-	//private AudioSource audioSource;
+	private AudioSource audioSource;
 	
 	private float rangedAttackNext = 0.0f;
 	private float rangedAttackRate = 2.0f;
@@ -41,7 +41,7 @@ public class DemoEnemyControls : MonoBehaviour {
 	void Start(){
 		ai = GetComponent<Ai>();
 		anim = GetComponent<Animator>();
-		//audioSource = gameObject.AddComponent<AudioSource>();
+		audioSource = gameObject.AddComponent<AudioSource>();
 		score = Camera.main.GetComponent<DemoScore>();
 		GameObject go = GameObject.FindGameObjectWithTag("Player");
 		if(go){
