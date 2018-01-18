@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/3rdpcamera.unity
+- path: Assets/enemyAItest.unity
   isLoaded: 1
   isActive: 1
