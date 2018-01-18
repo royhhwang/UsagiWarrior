@@ -3,20 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class pmove : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
 
-    public float moveSpeed;
-    public float jumpForce;
-    public float gravity;
-    public Vector3 moveDir;
+    private float moveSpeed = 15f;
+    private float jumpForce = 18f;
+    private float gravity = 40f;
+    private Vector3 moveDir;
 
     // Use this for initialization
     void Start()
     {
-        moveSpeed = 20f;
-        jumpForce = 20f;
-        gravity = 30f;
+       
         moveDir = Vector3.zero;
     }
 

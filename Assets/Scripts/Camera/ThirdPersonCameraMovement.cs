@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class thirdpcamera : MonoBehaviour
+public class ThirdPersonCameraMovement : MonoBehaviour
 {
 
     public Transform playerCam, character, centerPoint;

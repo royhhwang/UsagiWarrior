@@ -301,7 +301,6 @@
     <Compile Include="Assets\BreadcrumbAi\Examples\Demo\Scripts\DemoTidyBullets.cs" />
     <Compile Include="Assets\BreadcrumbAi\Examples\Demo\Scripts\DemoTidySpit.cs" />
     <Compile Include="Assets\despawn.cs" />
-    <Compile Include="Assets\pmove.cs" />
     <Compile Include="Assets\Scripts\Camera\ThirdPersonCameraMovement.cs" />
     <Compile Include="Assets\Scripts\Enemy\BasicEnemy.cs" />
     <Compile Include="Assets\Scripts\Enemy\IEnemy.cs" />
@@ -309,7 +308,6 @@
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Player\Shield\ShieldBlock.cs" />
     <Compile Include="Assets\Scripts\Player\Weapon\WeaponAttack.cs" />
-    <Compile Include="Assets\thirdpcamera.cs" />
     <Compile Include="Assets\UnityChan\Scripts\CameraController.cs" />
     <Compile Include="Assets\UnityChan\Scripts\FaceUpdate.cs" />
     <Compile Include="Assets\UnityChan\Scripts\IdleChanger.cs" />
