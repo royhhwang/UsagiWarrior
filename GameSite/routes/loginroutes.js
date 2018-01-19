@@ -54,7 +54,6 @@ exports.login = (req, res) => {
               'code': 200,
               'success': 'Login Successfull'
             });
-            res.redirect('/home');
           } else {
             res.send({
               'code': 204,
