@@ -131,6 +131,7 @@ MonoBehaviour:
   maxDistance: 4
   smooth: 2
   distance: 0
+  zoomSpeed: 0
   dollyDirAdjusted: {x: 0, y: 0, z: 0}
 --- !u!114 &114761714570434386
 MonoBehaviour:

@@ -303,7 +303,6 @@
     <Compile Include="Assets\despawn.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraCollision.cs" />
     <Compile Include="Assets\Scripts\Camera\ThirdPersonAdvanced.cs" />
-    <Compile Include="Assets\Scripts\Camera\ThirdPersonCameraMovement.cs" />
     <Compile Include="Assets\Scripts\Enemy\BasicEnemy.cs" />
     <Compile Include="Assets\Scripts\Enemy\IEnemy.cs" />
     <Compile Include="Assets\Scripts\FinalStage\BackWall.cs" />
