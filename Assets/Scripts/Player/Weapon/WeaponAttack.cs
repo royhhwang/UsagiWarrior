@@ -14,7 +14,7 @@ public class WeaponAttack : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 
 		if (Input.GetButtonDown("Fire1"))
         {
@@ -24,7 +24,7 @@ public class WeaponAttack : MonoBehaviour {
 
     public void BasicAttack()
     {
-        animator.SetTrigger("BaseAttack");
+        animator.SetTrigger(name: "BaseAttack");
     }
 
     private void OnTriggerEnter(Collider col)
