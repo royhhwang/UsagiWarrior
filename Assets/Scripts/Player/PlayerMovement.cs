@@ -6,9 +6,9 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 
-    private float moveSpeed = 15f;
-    private float jumpForce = 18f;
-    private float gravity = 40f;
+    public float moveSpeed = 15f;
+    public float jumpForce = 18f;
+    public float gravity = 40f;
     private Vector3 moveDir;
 
     // Use this for initialization

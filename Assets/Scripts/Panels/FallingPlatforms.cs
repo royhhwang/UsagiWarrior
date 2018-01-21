@@ -36,7 +36,7 @@ public class FallingPlatforms : MonoBehaviour {
 
     public void LateChangeTarget()
     {
-        Invoke("ChangeTarget", 2);
+        Invoke("ChangeTarget", 1.5f);
     }
 }
 
