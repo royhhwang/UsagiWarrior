@@ -10,10 +10,11 @@ public class FallingPlatforms : MonoBehaviour {
 
     public Vector3 newPosition;
     public string currentState;
-    public float smooth;
+    float smooth;
 
     private void Start()
     {
+        smooth = 2f;
         newPosition = position1.position;
     }
 
