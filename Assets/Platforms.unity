@@ -43,7 +43,7 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -89,7 +89,8 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000002, guid: d0296c766675e334b953efaddf470f2e,
+    type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
@@ -156,12 +157,12 @@ Prefab:
         type: 2}
       propertyPath: CameraFollowObject
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 687810706}
     - target: {fileID: 114761714570434386, guid: a1feaf5bb1c660d498c1583006d7a934,
         type: 2}
       propertyPath: PlayerObject
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1627709430}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a1feaf5bb1c660d498c1583006d7a934, type: 2}
   m_IsPrefabParent: 0
@@ -198,6 +199,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &687810706 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1420635635330052, guid: f192e4cd86103334f8016546e9efca0d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1640395106}
 --- !u!1001 &900237766
 Prefab:
   m_ObjectHideFlags: 0
@@ -1166,6 +1172,11 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!1 &1627709430 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1413992019834188, guid: f192e4cd86103334f8016546e9efca0d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1640395106}
 --- !u!1001 &1640395106
 Prefab:
   m_ObjectHideFlags: 0
