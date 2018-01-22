@@ -9,6 +9,9 @@ TagManager:
   - Waypoint
   - Breadcrumb
   - Sword
+  - Vision
+  - Shield
+  - Projectile
   layers:
   - Default
   - TransparentFX
@@ -22,12 +25,12 @@ TagManager:
   - Enemy
   - Breadcrumb
   - Waypoint
-  - Bullet
+  - Projectile
   - Spit
   - Obstacle
-  - 
-  - 
-  - 
+  - Vision
+  - Shield
+  - Sword
   - 
   - 
   - 

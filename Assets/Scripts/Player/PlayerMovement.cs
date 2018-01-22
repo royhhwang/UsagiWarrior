@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class pmove : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
 
     public float moveSpeed;

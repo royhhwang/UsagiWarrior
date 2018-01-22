@@ -33,12 +33,14 @@ public class thirdpcamera : MonoBehaviour
 
     private void Update()
     {
-
+        Debug.Log("updating thirdpersoncamera");
         zoom += Input.GetAxis("Mouse ScrollWheel") * zoomSpeed;
 
         if (zoom > zoomMin)
         {
             zoom = zoomMin;
+            Debug.Log("updating zoom");
+
         }
 
         if (zoom < zoomMax)
