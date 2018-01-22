@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class FinalStageTrigger : MonoBehaviour {
 
     public FinalPlatformChange finalPlatformChange;
@@ -10,6 +11,7 @@ public class FinalStageTrigger : MonoBehaviour {
     public BackWall backWall;
     public FrontWall frontWall;
     
+   
 
     void OnTriggerEnter(Collider collider)
     {
