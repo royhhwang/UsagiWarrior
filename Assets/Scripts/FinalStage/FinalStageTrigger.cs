@@ -9,6 +9,8 @@ public class FinalStageTrigger : MonoBehaviour {
     public RightWall rightWall;
     public BackWall backWall;
     public FrontWall frontWall;
+
+    public RestartLevel restartLevel;
     
 
     void OnTriggerEnter(Collider collider)
@@ -20,6 +22,8 @@ public class FinalStageTrigger : MonoBehaviour {
             rightWall.StartAnimation();
             backWall.StartAnimation();
             frontWall.StartAnimation();
+
+            restartLevel.enabled = false;
         }
     }
 }
