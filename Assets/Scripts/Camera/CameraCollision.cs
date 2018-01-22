@@ -13,7 +13,7 @@ public class CameraCollision : MonoBehaviour {
         dollyDir = transform.localPosition.normalized;
         distance = transform.localPosition.magnitude;
 
-        minDistance = 0.2f;
+        minDistance = 3f;
         maxDistance = 4f;
         smooth = 5f;
         zoomSpeed = 3f;
@@ -24,7 +24,7 @@ public class CameraCollision : MonoBehaviour {
 	void Update () {
 
         //Camera Zoom in/out Feature
-        maxDistance += Input.GetAxis("Mouse ScrollWheel") * zoomSpeed;
+        maxDistance -= Input.GetAxis("Mouse ScrollWheel") * zoomSpeed;
 
         if (maxDistance < minDistance)
         {
