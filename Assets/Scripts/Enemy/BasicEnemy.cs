@@ -20,7 +20,7 @@ public class BasicEnemy : MonoBehaviour, IEnemy
     void Start()
     {
         currentHealth = startingHealth;
-        GetComponent<Animation>()["Enemy"].layer = 2;
+        //GetComponent<Animation>()["Enemy"].layer = 2;
     }
 
     void FixedUpdate()
@@ -74,7 +74,7 @@ public class BasicEnemy : MonoBehaviour, IEnemy
             GetComponent<Animation>().CrossFade("faceAttack");
             rangedAttackNext = Time.time + rangedAttackRate;
             Rigidbody projectile = (Rigidbody)Instantiate(rangedProjectilePrefab, transform.position + transform.forward + transform.up, transform.rotation) as Rigidbody;
-            projectile.AddForce(transform.forward * 500);
+            projectile.AddForce(transform.forward * 1000);
         }
     }
 

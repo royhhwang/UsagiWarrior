@@ -14,14 +14,6 @@ public class despawn : MonoBehaviour
         Invoke("Despawn", DeathTime++);
     }
 
-    //void Update()
-    //{
-    //    if(destroyProjectile)
-    //    {
-    //        Despawn();
-    //    } 
-    //}
-
     void Despawn()
     {
         Destroy(gameObject);
@@ -41,5 +33,6 @@ public class despawn : MonoBehaviour
             Debug.Log("Shield Hit");
             Despawn();
         }
+        
     }
 }
