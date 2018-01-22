@@ -13,7 +13,7 @@ public class ShieldBlock : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void FixedUpdate () {
+	void Update () {
 		if (Input.GetButtonDown("Fire2"))
         {
             ShieldUp();

@@ -15,16 +15,17 @@ public class WeaponAttack : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-
 		if (Input.GetButtonDown("Fire1"))
         {
+            
             BasicAttack();    
         }
 	}
 
     public void BasicAttack()
     {
-        animator.SetTrigger(name: "BaseAttack");
+        animator.SetTrigger("BaseAttack");
+        Debug.Log("Running attack");
     }
 
     private void OnTriggerEnter(Collider col)

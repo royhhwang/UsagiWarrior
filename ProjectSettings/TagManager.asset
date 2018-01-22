@@ -9,6 +9,7 @@ TagManager:
   - Waypoint
   - Breadcrumb
   - Sword
+  - Platform
   layers:
   - Default
   - TransparentFX
