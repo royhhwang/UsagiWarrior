@@ -1352,6 +1352,7 @@ MonoBehaviour:
   rightWall: {fileID: 1553452031}
   backWall: {fileID: 1240176616}
   frontWall: {fileID: 1104830184}
+  restartLevel: {fileID: 1243796894}
 --- !u!23 &1983551575
 MeshRenderer:
   m_ObjectHideFlags: 0
