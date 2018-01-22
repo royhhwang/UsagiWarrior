@@ -10,7 +10,8 @@ public class FinalStageTrigger : MonoBehaviour {
     public BackWall backWall;
     public FrontWall frontWall;
 
-    public RestartLevel restartLevel;
+    public RestartLevel restartLevel; 
+
     
 
     void OnTriggerEnter(Collider collider)
