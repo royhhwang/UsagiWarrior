@@ -1,7 +1,7 @@
 const express = require('express');
 const login = require('./routes/loginroutes');
 const bodyparse = require('body-parser');
-
+const PORT = process.env.PORT || 4000;
 const app = express();
 app.use(bodyparse.urlencoded({
   extended: true
@@ -21,4 +21,4 @@ router.get('/', (req,res)=>{
 router.post('/signup', login.signup);
 router.post('/login', login.login);
 app.use('/api', router);
-app.listen(4000);
+app.listen(PORT);

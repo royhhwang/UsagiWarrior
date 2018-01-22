@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import MobileHeader from './components/MobileHeader/MobileHeader';
@@ -14,7 +13,7 @@ class App extends Component {
   constructor (props){
     super(props);
     this.state ={
-      appName : 'GameSite'
+      appName : 'Usagi-Warrior'
     }
   }
   render() {
