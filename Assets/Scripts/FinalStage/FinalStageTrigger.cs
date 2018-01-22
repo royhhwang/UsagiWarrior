@@ -10,6 +10,8 @@ public class FinalStageTrigger : MonoBehaviour {
     public RightWall rightWall;
     public BackWall backWall;
     public FrontWall frontWall;
+
+    public RestartLevel restartLevel;
     
    
 
@@ -22,6 +24,8 @@ public class FinalStageTrigger : MonoBehaviour {
             rightWall.StartAnimation();
             backWall.StartAnimation();
             frontWall.StartAnimation();
+
+            restartLevel.enabled = false;
         }
     }
 }
