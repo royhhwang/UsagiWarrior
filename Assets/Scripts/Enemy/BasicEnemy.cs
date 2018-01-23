@@ -91,6 +91,6 @@ public class BasicEnemy : MonoBehaviour, IEnemy
         inCombat = false;
         target = null;
         GetComponent<Animation>().CrossFade("faceDeath");
-        Destroy(gameObject, 10);
+        Destroy(gameObject, 3);
     }
 }
