@@ -3852,6 +3852,11 @@ RectTransform:
   m_AnchoredPosition: {x: -5, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1367231030 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1943642446891764, guid: 6bebe077b28ac8949bef341ff11bc0aa,
+    type: 2}
+  m_PrefabInternal: {fileID: 1640395106}
 --- !u!1 &1378792436
 GameObject:
   m_ObjectHideFlags: 0
@@ -4589,6 +4594,7 @@ MonoBehaviour:
   deathClip: {fileID: 0}
   flashSpeed: 5
   flashColor: {r: 1, g: 0, b: 0, a: 0.1}
+  body: {fileID: 1367231030}
 --- !u!114 &1627709432
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4655,6 +4661,22 @@ Prefab:
     - target: {fileID: 4954443624219810, guid: 6bebe077b28ac8949bef341ff11bc0aa, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 4725247097671998, guid: 6bebe077b28ac8949bef341ff11bc0aa, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4725247097671998, guid: 6bebe077b28ac8949bef341ff11bc0aa, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977637489948062, guid: 6bebe077b28ac8949bef341ff11bc0aa, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977637489948062, guid: 6bebe077b28ac8949bef341ff11bc0aa, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6bebe077b28ac8949bef341ff11bc0aa, type: 2}
