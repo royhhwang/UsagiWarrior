@@ -1,0 +1,10 @@
+body{
+    color: black; 
+}
+.primary{
+    background: orange !important;  
+}
+.secondary{
+    background: gray !important;
+    color: azure !important;
+}
