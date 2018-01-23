@@ -3,10 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class RestartLevel : MonoBehaviour {
+public class RestartLevel : MonoBehaviour
+{
+    public PlayerHealth playerHealth;
 
-    void OnTriggerEnter()
+    void OnTriggerEnter(Collider despawn)
     {
-        SceneManager.LoadScene("Platforms");
+        if (despawn.tag == "DespawnZone")
+        {
+            Debug.Log("hit despawn");
+            SceneManager.LoadScene("Platforms");
+        }
     }
 }

@@ -27,12 +27,11 @@ public class PlayerHealth : MonoBehaviour {
         playerMovement = GetComponent<PlayerMovement>();
         currentHealth = startingHealth;
     }
-    // Use this for initialization
+
     void Start () {
 		
 	}
 	
-	// Update is called once per frame
 	void FixedUpdate () {
         if (damaged)
         {
@@ -50,11 +49,10 @@ public class PlayerHealth : MonoBehaviour {
     public void TakeDamage (int amount)
     {
         damaged = true;
-
         currentHealth -= amount;
 
         healthSlider.value = currentHealth;
-        playerAudio.Play();
+        //playerAudio.Play();
         if(currentHealth <= 0 && !isDead)
         {
             Dead();
@@ -64,12 +62,10 @@ public class PlayerHealth : MonoBehaviour {
     public void Dead ()
     {
         isDead = true;
+        GetComponent<PlayerMovement>().enabled = false;
+        //anim.SetTrigger("Die");
 
-        anim.SetTrigger("Die");
-
-        playerAudio.clip = deathClip;
-        playerAudio.Play();
-
-        playerMovement.enabled = false;
+        //playerAudio.clip = deathClip;
+        //playerAudio.Play();
     }
 }

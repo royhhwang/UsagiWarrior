@@ -12,6 +12,7 @@ TagManager:
   - Vision
   - Shield
   - Projectile
+  - DespawnZone
   layers:
   - Default
   - TransparentFX
@@ -31,7 +32,7 @@ TagManager:
   - Vision
   - Shield
   - Sword
-  - 
+  - DespawnZone
   - 
   - 
   - 

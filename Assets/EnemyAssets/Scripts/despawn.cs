@@ -16,23 +16,23 @@ public class despawn : MonoBehaviour
 
     void Despawn()
     {
-        Destroy(gameObject);
+        if (gameObject.tag == "Projectile")
+        {
+            Destroy(gameObject);
+        }
     }
 
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
-            //target = other.transform;
-            Debug.Log("Player Hit: " + other.tag);
             other.GetComponent<PlayerHealth>().TakeDamage(WeaponDamage);
             Despawn();
         }
-        else if(other.gameObject.tag == "Shield")
+        else if (other.gameObject.tag == "Shield")
         {
-            Debug.Log("Shield Hit");
             Despawn();
         }
-        
+
     }
 }

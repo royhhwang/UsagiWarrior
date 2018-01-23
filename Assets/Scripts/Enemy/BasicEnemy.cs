@@ -10,9 +10,10 @@ public class BasicEnemy : MonoBehaviour, IEnemy
     public int maxRange;
     public int minRange = 1;
 
-    //public int WeaponDamage;
-    private float rangedAttackNext = 0.0f;
-    private float rangedAttackRate = 0.1f;
+    private bool inCombat;
+
+    public float rangedAttackNext;
+    public float rangedAttackRate;
 
     private Transform target = null;
     public Rigidbody rangedProjectilePrefab;
@@ -36,6 +37,7 @@ public class BasicEnemy : MonoBehaviour, IEnemy
             bool tooClose = distance < minRange;
             Vector3 direction = tooClose ? Vector3.back : Vector3.forward;
             transform.Translate(direction * Time.deltaTime);
+            inCombat = true;
             Combat();
         }
     }
@@ -45,8 +47,6 @@ public class BasicEnemy : MonoBehaviour, IEnemy
         if (other.tag == "Player")
         {
             target = other.transform;
-            //Debug.Log("Player Hit: " + other.tag);
-            //other.GetComponent<PlayerHealth>().TakeDamage(WeaponDamage);
         }
     }
     void OnTriggerExit(Collider other)
@@ -57,32 +57,40 @@ public class BasicEnemy : MonoBehaviour, IEnemy
             GetComponent<Animation>().CrossFade("faceIdle");
         }
     }
-    public int dmgAmount = 10;
+    public int dmgAmount;
     public void TakeDamage(int dmgAmount)
     {
         currentHealth -= dmgAmount;
         if (currentHealth <= 0)
         {
+            Destroy(gameObject.GetComponent<Collider>());
+            GetComponent<BasicEnemy>().enabled = false;
             Dead();
         }
     }
 
+    public int forwardForce;
+
     void Combat()
     {
-        if (Time.time > rangedAttackNext)
+        if (Time.time > rangedAttackNext && inCombat == true)
         {
             GetComponent<Animation>().CrossFade("faceAttack");
             rangedAttackNext = Time.time + rangedAttackRate;
             Rigidbody projectile = (Rigidbody)Instantiate(rangedProjectilePrefab, transform.position + transform.forward + transform.up, transform.rotation) as Rigidbody;
-            projectile.AddForce(transform.forward * 1000);
+            projectile.AddForce(transform.forward * forwardForce);
+        }
+       else
+        {
+            return;
         }
     }
 
     void Dead()
     {
-        GetComponent<Animation>().CrossFade("faceDeath");
-        Destroy(gameObject.GetComponent<Collider>());
-        Destroy(gameObject, 3);
+        inCombat = false;
         target = null;
+        GetComponent<Animation>().CrossFade("faceDeath");
+        Destroy(gameObject, 10);
     }
 }
