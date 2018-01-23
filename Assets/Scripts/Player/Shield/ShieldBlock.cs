@@ -5,9 +5,10 @@ using UnityEngine;
 public class ShieldBlock : MonoBehaviour {
     private Animator animator;
     public bool isShieldUp;
+    public PlayerHealth playerHealth;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         animator = GetComponent<Animator>();
         isShieldUp = false;
 	}
@@ -22,7 +23,11 @@ public class ShieldBlock : MonoBehaviour {
         {
             ShieldDown();
         }
-	}
+        if (playerHealth.currentHealth <= 0)
+        {
+            GetComponent<ShieldBlock>().enabled = false;
+        }
+    }
 
     public void ShieldUp()
     {

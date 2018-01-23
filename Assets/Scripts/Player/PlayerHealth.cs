@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerHealth : MonoBehaviour {
+public class PlayerHealth : MonoBehaviour
+{
 
     public int startingHealth = 100;
     public int currentHealth;
@@ -15,14 +16,14 @@ public class PlayerHealth : MonoBehaviour {
     public GameObject body;
 
     Animator anim;
-    
+
     AudioSource playerAudio;
     PlayerMovement playerMovement;
 
     bool isDead;
     bool damaged;
 
-    private void Awake ()
+    private void Awake()
     {
         anim = body.GetComponent<Animator>();
         playerAudio = GetComponent<AudioSource>();
@@ -30,11 +31,13 @@ public class PlayerHealth : MonoBehaviour {
         currentHealth = startingHealth;
     }
 
-    void Start () {
-		
-	}
-	
-	void FixedUpdate () {
+    void Start()
+    {
+
+    }
+
+    void FixedUpdate()
+    {
         if (damaged)
         {
             damageImage.color = flashColor;
@@ -48,21 +51,41 @@ public class PlayerHealth : MonoBehaviour {
         //if (playerMovement.)
     }
 
-    public void TakeDamage (int amount)
+    void OnTriggerEnter(Collider despawn)
+    {
+        if (despawn.tag == "DespawnZone")
+        {
+            transform.position = Vector3.zero;
+            FallDamage(10);
+        }
+    }
+
+    public void FallDamage (int amount)
+    {
+        damaged = true;
+        currentHealth -= amount;
+
+        healthSlider.value = currentHealth;
+        if(currentHealth <=0 && !isDead)
+        {
+            Dead();
+        }
+    }
+
+    public void TakeDamage(int amount)
     {
         damaged = true;
         currentHealth -= amount;
 
         healthSlider.value = currentHealth;
         //playerAudio.Play();
-        if(currentHealth <= 0 && !isDead)
+        if (currentHealth <= 0 && !isDead)
         {
-            Debug.Log("I am dead!");
             Dead();
         }
     }
 
-    public void Dead ()
+    public void Dead()
     {
         isDead = true;
         GetComponent<PlayerMovement>().enabled = false;

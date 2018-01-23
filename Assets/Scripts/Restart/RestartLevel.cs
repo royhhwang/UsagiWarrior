@@ -11,7 +11,6 @@ public class RestartLevel : MonoBehaviour
     {
         if (despawn.tag == "DespawnZone")
         {
-            Debug.Log("hit despawn");
             SceneManager.LoadScene("Platforms");
         }
     }

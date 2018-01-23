@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class WeaponAttack : MonoBehaviour {
+
     private Animator animator;
     public int WeaponDamage;
+    public PlayerHealth playerHealth;
 
-	// Use this for initialization
-	void Start () 
+    // Use this for initialization
+    void Start () 
     {
         animator = GetComponent<Animator>();
         WeaponDamage = 10;
@@ -20,7 +22,12 @@ public class WeaponAttack : MonoBehaviour {
         {
             BasicAttack();    
         }
-	}
+        if (playerHealth.currentHealth <= 0)
+        {
+            GetComponent<WeaponAttack>().enabled = false;
+            Destroy(this);
+        }
+    }
 
     public void BasicAttack()
     {
@@ -32,7 +39,6 @@ public class WeaponAttack : MonoBehaviour {
 
         if (col.tag == "Enemy")
         {
-            Debug.Log("Hit: " + col.tag);
             col.GetComponent<IEnemy>().TakeDamage(WeaponDamage);
         }
     }

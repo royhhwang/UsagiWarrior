@@ -4,13 +4,17 @@ using UnityEngine;
 
 public class BasicEnemy : MonoBehaviour, IEnemy
 {
-    public float startingHealth, power;
+    private float startingHealth, power;
     private float currentHealth;
+    public Transform treasure;
 
     public int maxRange;
     public int minRange = 1;
+    public int forwardForce;
+    public int dmgAmount;
 
     private bool inCombat;
+    private bool musicPlaying = false;
 
     public float rangedAttackNext;
     public float rangedAttackRate;
@@ -18,10 +22,12 @@ public class BasicEnemy : MonoBehaviour, IEnemy
     private Transform target = null;
     public Rigidbody rangedProjectilePrefab;
 
+    AudioSource demonTaylor;
+
     void Start()
     {
         currentHealth = startingHealth;
-        //GetComponent<Animation>()["Enemy"].layer = 2;
+        demonTaylor = GetComponent<AudioSource>();
     }
 
     void FixedUpdate()
@@ -47,8 +53,11 @@ public class BasicEnemy : MonoBehaviour, IEnemy
         if (other.tag == "Player")
         {
             target = other.transform;
+            musicPlaying = true;
+            playMusic();
         }
     }
+
     void OnTriggerExit(Collider other)
     {
         if (other.tag == "Player")
@@ -57,7 +66,28 @@ public class BasicEnemy : MonoBehaviour, IEnemy
             GetComponent<Animation>().CrossFade("faceIdle");
         }
     }
-    public int dmgAmount;
+
+    public void playMusic()
+    {
+        if (musicPlaying == true)
+        {
+            demonTaylor.Play();
+            musicPlaying = false;
+        } 
+        else if (musicPlaying == false)
+        {
+            destroyMusic();
+        }
+    }
+
+    public void destroyMusic()
+    {
+        if(musicPlaying == false)
+        {
+            Destroy(demonTaylor);
+        }
+    }
+
     public void TakeDamage(int dmgAmount)
     {
         currentHealth -= dmgAmount;
@@ -69,8 +99,6 @@ public class BasicEnemy : MonoBehaviour, IEnemy
         }
     }
 
-    public int forwardForce;
-
     void Combat()
     {
         if (Time.time > rangedAttackNext && inCombat == true)
@@ -80,7 +108,7 @@ public class BasicEnemy : MonoBehaviour, IEnemy
             Rigidbody projectile = (Rigidbody)Instantiate(rangedProjectilePrefab, transform.position + transform.forward + transform.up, transform.rotation) as Rigidbody;
             projectile.AddForce(transform.forward * forwardForce);
         }
-       else
+        else
         {
             return;
         }
@@ -92,5 +120,6 @@ public class BasicEnemy : MonoBehaviour, IEnemy
         target = null;
         GetComponent<Animation>().CrossFade("faceDeath");
         Destroy(gameObject, 3);
+        Instantiate(treasure, transform.position, Quaternion.identity);
     }
 }

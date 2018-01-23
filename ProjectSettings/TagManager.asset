@@ -13,6 +13,7 @@ TagManager:
   - Shield
   - Projectile
   - DespawnZone
+  - Treasure
   layers:
   - Default
   - TransparentFX
@@ -33,7 +34,7 @@ TagManager:
   - Shield
   - Sword
   - DespawnZone
-  - 
+  - Treasure
   - 
   - 
   - 
