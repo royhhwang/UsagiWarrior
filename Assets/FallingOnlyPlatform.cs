@@ -15,7 +15,7 @@ public class FallingOnlyPlatform : MonoBehaviour
 
     private void Start()
     {
-        smooth = 2f;
+        smooth = 1f;
         newPosition = position1.position;
     }
 

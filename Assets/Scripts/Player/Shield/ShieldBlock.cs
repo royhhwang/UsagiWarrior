@@ -40,12 +40,4 @@ public class ShieldBlock : MonoBehaviour {
         isShieldUp = false;
         animator.SetTrigger("ShieldOff");
     }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.tag == "Enemy")
-        {
-            //don't take damage
-        }
-    }
 }

@@ -352,7 +352,6 @@
   <ItemGroup>
     <None Include="Assets\BreadcrumbAi\Ai\Documentation\ReadMe.txt" />
     <None Include="Assets\BreadcrumbAi\Examples\Demo\Materials\DoubleSided.shader" />
-    <None Include="Assets\SkySerie Freebie\Hdri setup.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

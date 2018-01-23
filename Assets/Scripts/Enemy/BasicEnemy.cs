@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BasicEnemy : MonoBehaviour, IEnemy
 {
-    private float startingHealth, power;
+    public float startingHealth;
     private float currentHealth;
     public Transform treasure;
 
