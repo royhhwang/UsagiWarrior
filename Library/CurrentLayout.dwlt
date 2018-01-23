@@ -109,7 +109,7 @@ MonoBehaviour:
   m_MinSize: {x: 711, y: 592}
   m_MaxSize: {x: 18006, y: 18042}
   vertical: 1
-  controlID: 11
+  controlID: 35
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -134,7 +134,7 @@ MonoBehaviour:
   m_MinSize: {x: 711, y: 492}
   m_MaxSize: {x: 18006, y: 14042}
   vertical: 0
-  controlID: 12
+  controlID: 36
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -158,7 +158,7 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 37
+  controlID: 97
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -227,13 +227,12 @@ MonoBehaviour:
     y: 0
     width: 819
     height: 728
-  m_MinSize: {x: 204, y: 221}
-  m_MaxSize: {x: 4004, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 14}
   - {fileID: 17}
-  - {fileID: 18}
   m_Selected: 1
   m_LastSelected: 0
 --- !u!114 &11
@@ -259,8 +258,9 @@ MonoBehaviour:
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
+  - {fileID: 18}
   m_Selected: 0
-  m_LastSelected: 0
+  m_LastSelected: 1
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -422,9 +422,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 7c2f0000
-    m_LastClickedID: 12156
-    m_ExpandedIDs: 9efbffff00000000
+    m_SelectedIDs: 602a0000
+    m_LastClickedID: 0
+    m_ExpandedIDs: 4e11fdff3e2bfdff082cfdff622efdffdc3bfdffa43cfdfffc3efdffb229feff402afeffce2afeff5c2bfeffea2bfeff1881fefffe81feff5684feff82fbffff9efbffff00000000603000006431000098310000fc310000ee650000e26e0000006f0000de6f0000e86f0000087100000e7100002471000098710000a6710000dc710000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -486,19 +486,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scripts/Enemy
+    - Assets/BreadcrumbAi
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Scripts/Enemy
+  - Assets/BreadcrumbAi
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\rh7ni_000\Desktop\reactapp\Project3-RPG
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 385}
-    m_SelectedIDs: 5e2a0000
-    m_LastClickedID: 10846
-    m_ExpandedIDs: 0000000096290000ac290000bc290000d0290000022a00005e2a0000622a0000862a0000be2a0000002b00001c2b0000202b0000c42b0000d82b0000042c0000242c0000462c00005c2c0000982c0000ae2c0000bc2c0000162d0000222d00002c2d00002e2d0000442d0000762d0000b82d0000142e0000182e0000282e0000a2350000a4350000a6350000a8350000aa350000ac350000ae350000ffffff7f
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 2c2d0000
+    m_LastClickedID: 11564
+    m_ExpandedIDs: 0000000096290000ac290000bc290000d0290000fe290000022a00005e2a0000622a0000862a0000be2a0000002b00001c2b0000202b0000c42b0000d82b0000042c0000242c0000462c00005c2c0000982c0000bc2c0000d02c0000162d0000222d00002e2d0000442d0000762d0000b82d0000142e0000182e0000282e0000a2350000a4350000a6350000a8350000aa350000ac350000ae350000ffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -553,22 +553,22 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 462a00003a2a0000b284000090310000f42e0000e84400007a60fcff7e290000c843000046c20000041e03005e4b0000eea2e0ff
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: 50mm Zoom 1
+      m_OriginalName: 50mm Zoom 1
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 10848
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 9}
     m_CreateAssetUtility:
@@ -614,9 +614,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 2.6484375, y: 26.140625, z: 6.0976562}
+    m_Target: {x: 24.03125, y: 33.75, z: -12.0625}
     speed: 2
-    m_Value: {x: 2.6484375, y: 26.140625, z: 6.0976562}
+    m_Value: {x: 24.03125, y: 33.75, z: -12.0625}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -632,21 +632,21 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
     yGrid:
-      m_Target: 0
+      m_Target: 1
       speed: 2
-      m_Value: 0
+      m_Value: 1
     zGrid:
       m_Target: 0
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.049625155, y: 0.6926144, z: -0.047863264, w: 0.71800864}
+    m_Target: {x: -0.11196264, y: -0.5872619, z: 0.082456104, w: -0.7973687}
     speed: 2
-    m_Value: {x: 0.049625043, y: 0.6926128, z: -0.047863156, w: 0.718007}
+    m_Value: {x: -0.111962184, y: -0.58725953, z: 0.08245577, w: -0.7973655}
   m_Size:
-    m_Target: 43.60075
+    m_Target: 193.11847
     speed: 2
-    m_Value: 43.60075
+    m_Value: 193.11847
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -680,9 +680,9 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 531
+    x: 1350
     y: 92
-    width: 815
+    width: 570
     height: 707
   m_PersistentViewDataDictionary: {fileID: 0}
   m_ViewTransforms:
@@ -697,14 +697,14 @@ MonoBehaviour:
     - {fileID: 1107288129575447254, guid: 7b9f4c4ee52b9204897452e8f7bc5a72, type: 2}
     - {fileID: 1107149595338477120, guid: a323a6d352b55b448b1c720304021dea, type: 2}
     m_ValueSerializationHelper:
-    - e00: 1.0051854
+    - e00: 0.65901345
       e01: 0
       e02: 0
-      e03: -74.8208
+      e03: -158.25424
       e10: 0
-      e11: 1.0051854
+      e11: 0.65901345
       e12: 0
-      e13: 396.17664
+      e13: 376.17343
       e20: 0
       e21: 0
       e22: 1
