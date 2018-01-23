@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
-
 import './Signup.css'
+
 class Signup extends Component {
   constructor(props){
     super(props)
@@ -53,40 +53,27 @@ class Signup extends Component {
         error.textContent = '';
         return true;
     }
-
     handleSubmit(event){
-      event.preventDefault();
-      
+      event.preventDefault();  
       if(this.showFormErrors()){
-        const data = {
+        const requestBody = {
           username: this.state.username,
           password: this.state.password
-        }
-        console.log('form is valid: submit data');
+        };
+        console.log('form is valid: submit requestBody');
         fetch("/api/signup", {
           method: 'POST',
           headers: {'Content-Type': 'application/json'},
-          body: JSON.stringify(data)
-      }).then((response) =>{
-          if (response.status >= 400) {
-            throw new Error("Bad response from server");
-          }
-          return response.json();
-      }).then((data) =>{
-          console.log(data)    
-          if(data.code === 200){
+          body: JSON.stringify(requestBody)
+      })
+      .then((data) =>{
+          if(data.status === 200){
             this.props.history.push('/home');
-             console.log('Working');  
           }
-      }).catch((err)=>{
-          console.log(err)
-      });
+      })
       }else{
         console.log('form is invalid: do not submit');
       }
-      
-      
-      
     }
     onChange(e){
        e.target.classList.add('active');
@@ -95,7 +82,6 @@ class Signup extends Component {
       });
       this.showInputError(e.target.name);
       }
-
   render(){
     return (
       <div>
@@ -146,43 +132,6 @@ class Signup extends Component {
   <Link to='/login' className='button'> Login</Link>
 </div>
 </div>
-  // <form className='form-group row small-up-2 medium-up-3 large-up-4 medium-4 cell columns '>
-  // <h2>Signup Page</h2> 
-        
-  //         <label id="usernameLabel">Username</label>
-  //         <input className="form-control"
-  //           type="text"
-  //           name="username"
-  //           ref="username"
-  //           value={ this.state.username } 
-  //           onChange={ this.onChange }
-  //           required />
-  //         <div className="error" id="usernameError" />
-   
-       
-  //         <label id="passwordLabel">Password</label>
-  //         <input className="form-control"
-  //           type="password" 
-  //           name="password"
-  //           ref="password"
-  //           value={ this.state.password } 
-  //           onChange={ this.onChange }
-  //           pattern=".{5,}"
-  //           required />
-  //         <div className="error" id="passwordError" />
-        
-        
-  //         <label id="passwordConfirmLabel">Confirm Password</label>
-  //         <input className="form-control"
-  //           type="password" 
-  //           name="passwordConfirm"
-  //           ref="passwordConfirm"
-  //           value={ this.state.passwordConfirm } 
-  //           onChange={ this.onChange }
-  //           required />
-  //         <div className="error" id="passwordConfirmError" />
-  //     <button type='submit' value='Signup' className='button' onClick={this.handleSubmit} method='POST'>Sign up!</button>
-  //   </form>
     );
   }
 }

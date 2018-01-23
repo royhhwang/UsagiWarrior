@@ -3,7 +3,7 @@ import './Footer.css'
 class Footer extends Component {
   render() {
     return (
-     <div>
+      <div>
         <div className="row">
             <div className="medium-12 columns">
               <h3>Copyright HyRoLe Games</h3>
