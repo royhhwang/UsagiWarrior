@@ -12,8 +12,10 @@ public class PlayerHealth : MonoBehaviour {
     public AudioClip deathClip;
     public float flashSpeed = 5f;
     public Color flashColor = new Color(1f, 0f, 0f, 0.1f);
+    public GameObject body;
 
     Animator anim;
+    
     AudioSource playerAudio;
     PlayerMovement playerMovement;
 
@@ -22,7 +24,7 @@ public class PlayerHealth : MonoBehaviour {
 
     private void Awake ()
     {
-        anim = GetComponent<Animator>();
+        anim = body.GetComponent<Animator>();
         playerAudio = GetComponent<AudioSource>();
         playerMovement = GetComponent<PlayerMovement>();
         currentHealth = startingHealth;
@@ -55,6 +57,7 @@ public class PlayerHealth : MonoBehaviour {
         //playerAudio.Play();
         if(currentHealth <= 0 && !isDead)
         {
+            Debug.Log("I am dead!");
             Dead();
         }
     }
@@ -63,9 +66,6 @@ public class PlayerHealth : MonoBehaviour {
     {
         isDead = true;
         GetComponent<PlayerMovement>().enabled = false;
-        //anim.SetTrigger("Die");
-
-        //playerAudio.clip = deathClip;
-        //playerAudio.Play();
+        anim.SetTrigger("Death");
     }
 }
