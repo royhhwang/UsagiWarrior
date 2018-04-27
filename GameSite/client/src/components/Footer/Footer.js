@@ -6,7 +6,7 @@ class Footer extends Component {
       <div>
         <div className="row">
             <div className="medium-12 columns">
-              <h3>Copyright HyRoLe Games</h3>
+              <h3>Copyright Hyrole Games</h3>
             </div>
           </div>
      </div>

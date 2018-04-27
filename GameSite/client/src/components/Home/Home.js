@@ -7,7 +7,7 @@ class Home extends Component {
    <div className="row small-up-2 medium-up-3 large-up-4">
    <div className="column">
      <h2>Home Page</h2>
-   <div href="https://royhhwang.itch.io/usagi-warrior">Usagi Warrior</div>
+   <a href="https://royhhwang.itch.io/usagi-warrior">Usagi Warrior</a>
    </div>
    
    </div>
